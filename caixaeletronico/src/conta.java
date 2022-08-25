@@ -22,6 +22,7 @@ public class conta {
         System.out.println("Numero da conta : " + sacar.numeroConta);
         System.out.println("Saldo : " + sacar.saldoConta); 
 
+        System.out.println("Bem vindo");
         System.out.println("Deseja Depositar [1] ou Sacar [2] : "); //estrutura de decisão caso o usuario deseja ou sacar ou depositar
             int operacao = scanner.nextInt();
                 if(operacao == 1){  //usuario vai depositar na conta 
