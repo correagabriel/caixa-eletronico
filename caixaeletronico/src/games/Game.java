@@ -9,6 +9,7 @@ public class Game {
 
         Scanner scanner = new Scanner(System.in);
 
+
         System.out.println("Digite um numero entre 1 e 5 ");
             posicao = scanner.nextInt();
 
@@ -30,6 +31,9 @@ public class Game {
                 break;
             case 5:
                 System.out.println("Retorne 4 casas ");
+                break;
+            default:
+                System.out.println("VOCÊ PERDEU SUA ALMA PARA O VECNA");
                 break;
             }
     }
