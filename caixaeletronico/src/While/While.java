@@ -1,8 +1,6 @@
 package While;
 import java.util.concurrent.ThreadLocalRandom;
 
-import javax.lang.model.util.Elements.Origin;
-
 public class While {
     public static void main(String[] args) {
         double mesada = 50.0D;
