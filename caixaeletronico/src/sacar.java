@@ -1,3 +1,5 @@
+import While.ParametroInvalido;
+
 public class sacar {
     int numeroConta = 14564; //numero da conta
     String agenciaBanco = "Santander"; //agencia do banco
@@ -5,12 +7,13 @@ public class sacar {
     double  valorSaque; //sacar da conta
     double  valorDeposito; //depositar na conta
 
-        public void sacarDinheiro(double valor){ //funçaõ sacar dinheiro 
+        public void sacarDinheiro(double valor) throws ParametroInvalido{ //funçaõ sacar dinheiro 
             if(valorSaque < saldoConta){    //double valor serve para não dar conflito quando chamamos a função
                 saldoConta = saldoConta - valorSaque;
             }
             else{
                 System.out.println("Saldo Indisponivel");
+                throw new ParametroInvalido();
             }
         }
 
